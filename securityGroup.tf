@@ -11,6 +11,9 @@ resource "aws_security_group" "SGpublicSN" {
   }
 }
 
+#####################################################
+#
+
 # Security Group 2 for pvt-sn-db<----------> pb-sn
 resource "aws_security_group" "SGpvtdb" {
   name        = "${var.vpc_cidr}-pvt-dbsn-sg"
